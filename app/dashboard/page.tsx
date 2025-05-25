@@ -1,8 +1,9 @@
-// app/dashboard/page.tsx (or pages/dashboard.tsx)
-import { auth } from '@clerk/nextjs/server';
+import React from 'react'
 
-export default function Dashboard() {
-  const { userId } = auth(); // Optional: fetch session info
+type Props = {}
 
-  return <div>Welcome to your dashboard, user {userId}!</div>;
+export default function Dashboard({}: Props) {
+  return (
+    <div>Dashboard</div>
+  )
 }
